@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客訴表單</title>
+</head>
+<body>
+    <header>
+        <h1 style="color: palevioletred; text-align: center;">客訴表單</h1>
+        <hr>
+    </header>
+    <div style="background-color: paleturquoise;">
+        <hr>
+        <section>
+            您好！我們是Meet Donuts，這裡是客訴表單，有什麼問題需要改進都可以在這裡跟我們說喔！
+        </section>
+        <section>
+            <form action="/submit_complaint" method="post" style="padding: 20px;">
+                <label for="complaint_topic">投訴問題:</label><br>
+                <input type="text" id="complaint_topic" name="complaint_topic" required style="width: 100%;"><br><br>
+                
+                <label for="complaint_details">詳細內容敘述:</label><br>
+                <textarea id="complaint_details" name="complaint_details" rows="10" required style="width: 100%;"></textarea><br><br>
+                
+                <input type="submit" value="提交">
+            </form>
+        </section>
+    </div>
+</body>
+</html>g
